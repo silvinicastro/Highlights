@@ -1,0 +1,117 @@
+/* Grilla */
+.container, .container-title {
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  margin: 30px auto;
+}
+
+img {
+  width: 100%;
+}
+
+.numbers {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.textos {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+  padding-bottom: 9px;
+}
+
+ /* Transiciones */
+.modulo-simple:hover .flipper {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.modulo-simple:hover > .flipper > .front > .numbers,
+.modulo-simple:hover > .flipper > .front > .textos
+ {
+  opacity: 0;
+}
+
+.flipper {
+  transition: 1s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front, .back {
+  backface-visibility: hidden;
+}
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(180deg);
+  background-color: #f7f7f8;
+  padding: 30px;
+  padding-bottom: 30px;
+  overflow: hidden;
+}
+
+.modulo-doble, .modulo-simple {
+  perspective: 1000px;
+}
+
+/* Tipografia */
+
+h2 {
+  text-align: center;
+  font-family: suecaslabmedium;
+  font-size: 28px;
+}
+
+h5 {
+  text-align: center;
+  font-family: suecaslabmedium;
+  font-size: 16px;
+}
+
+h3 {
+  font-family: suecananosemibold;
+  font-size: 18px;
+  line-height: 19px;
+  color: #ff6600;
+}
+
+h4 {
+  font-family: suecananosemibold;
+  font-size: 18px;
+  line-height: 19px;
+  color: #ff6600;
+}
+p {
+  text-align: left;
+  font-family: suecaslabmedium;
+  font-size: 14px;
+}
+
+@media screen and (min-width:500px)  {
+  .container, .container-title {
+  width: 100%;
+  max-width: 740px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin: 30px auto;
+}
+}
