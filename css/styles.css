@@ -32,17 +32,21 @@ img {
   padding-bottom: 9px;
 }
 
- /* Transiciones */
-.modulo-simple:hover .flipper {
+.modulo-simple:hover {
   cursor: pointer;
+}
+
+ /* Transiciones */
+/* .modulo-simple:hover .flipper, */
+.cliqueado .flipper {
   transform: rotateY(180deg);
 }
 
-.modulo-simple:hover > .flipper > .front > .numbers,
+/* .modulo-simple:hover > .flipper > .front > .numbers,
 .modulo-simple:hover > .flipper > .front > .textos
  {
   opacity: 0;
-}
+} */
 
 .flipper {
   transition: 1s;
