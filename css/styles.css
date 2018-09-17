@@ -128,4 +128,7 @@ p {
   grid-column-start: 1;
   grid-column-end: 3;
 }
+.modulo-doble p {
+  width: 45%;
+}
 }
