@@ -22,20 +22,27 @@
 
       <div class="container">
         <!-- UNO -->
-        <div class="modulo-simple">
+        <div class="modulo-doble">
           <div class="flipper">
             <div class="front">
-              <img src="img/contaminaCH.jpg">
-              <img class="numbers" src="img/uno.png">
+              <picture>
+  <source media="(min-width: 500px)" srcset="img/contaminaGR.jpg">
+  <source media="(min-width: 200px)" srcset="img/contaminaCH.jpg">
+  <img src="img/contaminaCH.jpg" style="width:100%;">
+</picture>
+
+<picture class="numero_1">
+<source media="(min-width: 500px)" srcset="img/unoGR.png">
+<source media="(min-width: 200px)" srcset="img/uno.png">
+<img src="img/uno.png" style="width:100%;">
+</picture>
               <h3 class="textos">Efecto invernadero</h3>
             </div>
             <div class="back">
               <h4>Efecto invernadero</h3>
                 <p>Algunos gases de la atmósfera actúan como el cristal de un invernadero: retienen el calor del sol e
                   impiden que se escape fuera. Muchos de esos gases se producen de forma natural pero, debido a la
-                  actividad humana, las concentraciones de algunos de ellos están aumentando en la atmósfera. El CO2 es
-                  un gas de efecto invernadero producido principalmente por la actividad humana y es responsable del
-                  63% del calentamiento global causado por el hombre.</p>
+                  actividad humana, las concentraciones de algunos de ellos están aumentando en la atmósfera. El CO2 es un gas de efecto invernadero producido principalmente por la actividad humana y es responsable del 63% del calentamiento global causado por el hombre.</p>
             </div>
           </div>
         </div>
@@ -49,11 +56,9 @@
             </div>
             <div class="back">
               <h4>Gas metano</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer Lorem ipsum dodolor sit amet, consectetuer Lorem ipsum
-                  dodolor sit amet, consectetuer Lorem ipsum dodolor sit amet, consectetuer Lorem ipsum dodolor sit
-                  amet, consectetuer Lorem ipsum dodolor sit amet, consectetuer Lorem ipsum dodolor sit amet,
-                  consectetuer Lorem ipsum dodolor sit amet, consectetuer Lorem ipsum dodolor sit amet, consectetuer
-                  Lorem ipsum dodolor sit amet, consectetuer Lorem ipsum dolor sit amet, cetuer.</p>
+                <p>Algunos gases de la atmósfera actúan como el cristal de un invernadero: retienen el calor del sol e
+                  impiden que se escape fuera. Muchos de esos gases se producen de forma natural pero, debido a la
+                  actividad humana, las concentraciones de algunos de ellos están aumentando en la atmósfera. El CO2 es un gas de efecto invernadero producido principalmente por la actividad humana y es responsable del 63% del calentamiento global causado por el hombre.</p>
             </div>
           </div>
         </div>
@@ -67,11 +72,9 @@
             </div>
             <div class="back">
               <h4>Combustibles fósiles</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer Lorem ipsum dodolor sit amet, consectetuer Lorem ipsum
-                  dodolor sit amet, consectetuer Lorem ipsum dodolor sit amet, consectetuer Lorem ipsum dodolor sit
-                  amet, consectetuer Lorem ipsum dodolor sit amet, consectetuer Lorem ipsum dodolor sit amet,
-                  consectetuer Lorem ipsum dodolor sit amet, consectetuer Lorem ipsum dodolor sit amet, consectetuer
-                  Lorem ipsum dodolor sit amet, consectetuer Lorem ipsum dolor sit amet, cetuer.</p>
+                <p>Algunos gases de la atmósfera actúan como el cristal de un invernadero: retienen el calor del sol e
+                  impiden que se escape fuera. Muchos de esos gases se producen de forma natural pero, debido a la
+                  actividad humana, las concentraciones de algunos de ellos están aumentando en la atmósfera. El CO2 es un gas de efecto invernadero producido principalmente por la actividad humana y es responsable del 63% del calentamiento global causado por el hombre.</p>
             </div>
           </div>
         </div>
@@ -85,11 +88,9 @@
             </div>
             <div class="back">
               <h4>Desmonte indiscriminado</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer Lorem ipsum dodolor sit amet, consectetuer Lorem ipsum
-                  dodolor sit amet, consectetuer Lorem ipsum dodolor sit amet, consectetuer Lorem ipsum dodolor sit
-                  amet, consectetuer Lorem ipsum dodolor sit amet, consectetuer Lorem ipsum dodolor sit amet,
-                  consectetuer Lorem ipsum dodolor sit amet, consectetuer Lorem ipsum dodolor sit amet, consectetuer
-                  Lorem ipsum dodolor sit amet, consectetuer Lorem ipsum dolor sit amet, cetuer.</p>
+                <p>Algunos gases de la atmósfera actúan como el cristal de un invernadero: retienen el calor del sol e
+                  impiden que se escape fuera. Muchos de esos gases se producen de forma natural pero, debido a la
+                  actividad humana, las concentraciones de algunos de ellos están aumentando en la atmósfera. El CO2 es un gas de efecto invernadero producido principalmente por la actividad humana y es responsable del 63% del calentamiento global causado por el hombre.</p>
             </div>
           </div>
         </div>
@@ -103,11 +104,9 @@
             </div>
             <div class="back">
               <h4>Reciclado de residuos</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer Lorem ipsum dodolor sit amet, consectetuer Lorem ipsum
-                  dodolor sit amet, consectetuer Lorem ipsum dodolor sit amet, consectetuer Lorem ipsum dodolor sit
-                  amet, consectetuer Lorem ipsum dodolor sit amet, consectetuer Lorem ipsum dodolor sit amet,
-                  consectetuer Lorem ipsum dodolor sit amet, consectetuer Lorem ipsum dodolor sit amet, consectetuer
-                  Lorem ipsum dodolor sit amet, consectetuer Lorem ipsum dolor sit amet, cetuer.</p>
+                <p>Algunos gases de la atmósfera actúan como el cristal de un invernadero: retienen el calor del sol e
+                  impiden que se escape fuera. Muchos de esos gases se producen de forma natural pero, debido a la
+                  actividad humana, las concentraciones de algunos de ellos están aumentando en la atmósfera. El CO2 es un gas de efecto invernadero producido principalmente por la actividad humana y es responsable del 63% del calentamiento global causado por el hombre.</p>
             </div>
           </div>
         </div>
@@ -115,7 +114,7 @@
   </div>
 
   <script>
-    window.addEventListener("load", flip(".modulo-simple"))
+    window.addEventListener("load", flip(".modulo-doble, .modulo-simple"))
 
     function flip(selector) {
       let modulos = document.querySelectorAll(selector)

@@ -12,11 +12,12 @@
   margin: 30px auto;
 }
 
+
 img {
   width: 100%;
 }
 
-.numbers {
+.numero_1, .numbers {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -32,7 +33,8 @@ img {
   padding-bottom: 9px;
 }
 
-.modulo-simple:hover {
+
+.modulo-doble:hover, .modulo-simple:hover {
   cursor: pointer;
 }
 
@@ -54,9 +56,11 @@ img {
   position: relative;
 }
 
-.front, .back {
+.front, .numbers, .textos, .back {
   backface-visibility: hidden;
 }
+
+
 .back {
   position: absolute;
   top: 0;
@@ -107,7 +111,8 @@ p {
   font-size: 14px;
 }
 
-@media screen and (min-width:500px)  {
+
+@media screen and (min-width:500px) {
   .container, .container-title {
   width: 100%;
   max-width: 740px;
@@ -117,5 +122,10 @@ p {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
   margin: 30px auto;
+}
+
+.modulo-doble, .front, .back {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 }
