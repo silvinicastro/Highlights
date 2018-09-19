@@ -27,10 +27,9 @@ img {
 
 .textos {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  top: 15px;
+  left: 20px;
   width: 150px;
-  padding-bottom: 9px;
 }
 
 
@@ -84,6 +83,7 @@ h2 {
   text-align: center;
   font-family: suecaslabmedium;
   font-size: 28px;
+  line-height: 30px;
 }
 
 h5 {
@@ -94,9 +94,9 @@ h5 {
 
 h3 {
   font-family: suecananosemibold;
-  font-size: 18px;
-  line-height: 19px;
-  color: #ff6600;
+  font-size: 25px;
+  line-height: 25px;
+  color: white;
 }
 
 h4 {
