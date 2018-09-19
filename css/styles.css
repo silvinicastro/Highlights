@@ -23,13 +23,14 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+  /* opacity: 0.7; */
 }
 
 .textos {
   position: absolute;
-  top: 15px;
+  top: 27px;
   left: 20px;
-  width: 150px;
+  width: 170px;
 }
 
 
@@ -80,22 +81,27 @@ img {
 /* Tipografia */
 
 h2 {
-  text-align: center;
-  font-family: suecaslabmedium;
+  text-align: left;
+  font-family: suecaslabthin;
+  font-weight: normal;
   font-size: 28px;
-  line-height: 30px;
+  line-height: 34px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 h5 {
-  text-align: center;
-  font-family: suecaslabmedium;
+  text-align: left;
+  font-family: suecaslablight;
   font-size: 16px;
+  line-height: 19px;
 }
 
 h3 {
-  font-family: suecananosemibold;
+  font-family: suecaslabsemibold;
   font-size: 25px;
   line-height: 25px;
+  letter-spacing: 1px;
   color: white;
 }
 
@@ -111,6 +117,7 @@ p {
   font-size: 14px;
 }
 
+/* version desktop */
 
 @media screen and (min-width:500px) {
   .container, .container-title {
@@ -130,5 +137,21 @@ p {
 }
 .modulo-doble p {
   width: 45%;
+}
+
+.modulo-doble .textos {
+  top: 320px;
+  left: 190px;
+  width: auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 35px;
+  line-height: 42px;
+}
+
+h5 {
+  text-align: center;
 }
 }
