@@ -4,6 +4,8 @@
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .container {
   display: grid;
@@ -15,6 +17,17 @@
 
 img {
   width: 100%;
+}
+
+.modulo-doble .info{
+  display: none;
+}
+
+.signo{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 7%;
 }
 
 .numero_1, .numbers {
@@ -30,7 +43,7 @@ img {
   position: absolute;
   top: 27px;
   left: 20px;
-  width: 170px;
+  width: 180px;
 }
 
 
@@ -56,7 +69,7 @@ img {
   position: relative;
 }
 
-.front, .numbers, .textos, .back {
+.front, .numbers, .signo, .textos, .back {
   backface-visibility: hidden;
 }
 
@@ -82,19 +95,16 @@ img {
 
 h2 {
   text-align: left;
-  font-family: suecaslabthin;
-  font-weight: normal;
-  font-size: 28px;
-  line-height: 34px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  font-family: suecaslablight;
+  font-size: 25px;
+  line-height: 30px;
 }
 
 h5 {
   text-align: left;
   font-family: suecaslablight;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 h3 {
@@ -106,7 +116,7 @@ h3 {
 }
 
 h4 {
-  font-family: suecananosemibold;
+  font-family: suecaslabsemibold;
   font-size: 18px;
   line-height: 19px;
   color: #ff6600;
@@ -140,18 +150,39 @@ p {
 }
 
 .modulo-doble .textos {
-  top: 320px;
-  left: 190px;
+  top: 150px;
+  left: 160px;
   width: auto;
+}
+
+.modulo-doble .signo {
+  width: 3.5%;
+}
+
+.modulo-doble .back .info{
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 h2 {
   text-align: center;
+  font-family: suecaslabthin;
   font-size: 35px;
   line-height: 42px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 h5 {
   text-align: center;
+  font-size: 16px;
+  line-height: 19px;
 }
+
+
 }
